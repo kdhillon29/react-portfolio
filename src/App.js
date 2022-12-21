@@ -4,9 +4,10 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import DotGroup from "./scenes/DotGroup";
 import Navbar from "./scenes/Navbar";
 import Landing from "./scenes/Landing"
-import MySkills from "./scenes/Skills";
+import Skills from "./scenes/Skills";
 import LineGradient from "./components/LineGradient";
 import { motion } from "framer-motion";
+import Projects from "./scenes/Projects";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -41,13 +42,23 @@ function App() {
         <Landing setSelectedPage={setSelectedPage} />
         </div>
         <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full ">
+      <div className="w-5/6 mx-auto md:h-full mb-10 ">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
           onViewportEnter={() => setSelectedPage("skills")}
         >
-          <MySkills />
+          <Skills />
+        </motion.div>
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("projects")}
+        >
+          <Projects />
         </motion.div>
       </div>
     </div>
