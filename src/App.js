@@ -8,6 +8,7 @@ import Skills from "./scenes/Skills";
 import LineGradient from "./components/LineGradient";
 import { motion } from "framer-motion";
 import Projects from "./scenes/Projects";
+import Contact from "./scenes/Contact";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -42,7 +43,7 @@ function App() {
         <Landing setSelectedPage={setSelectedPage} />
         </div>
         <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full mb-10 ">
+      <div className="w-5/6 mx-auto md:h-full  ">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -52,13 +53,23 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
+      <div className="w-5/6 mx-auto mt-2">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
           onViewportEnter={() => setSelectedPage("projects")}
         >
           <Projects />
+        </motion.div>
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("contact")}
+        >
+          <Contact />
         </motion.div>
       </div>
     </div>

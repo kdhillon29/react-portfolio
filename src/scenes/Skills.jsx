@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const Skills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="py-10 mb-20">
+    <section id="skills" className="pt-10">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-10 mb-20">
+      <div className="md:flex md:justify-between md:gap-16 mt-10">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
