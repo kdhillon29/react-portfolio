@@ -9,6 +9,7 @@ import LineGradient from "./components/LineGradient";
 import { motion } from "framer-motion";
 import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
+import Footer from "./scenes/Footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -63,7 +64,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto  mb-10">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -72,6 +73,7 @@ function App() {
           <Contact />
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 }

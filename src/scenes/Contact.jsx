@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact py-12">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -49,7 +49,7 @@ const Contact = () => {
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="md:flex md:justify-between gap-16 mt-5">
+      <div className="sm:flex sm:justify-between gap-10 mt-5">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -73,7 +73,7 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="basis-1/2 mt-10 md:mt-0"
+          className="basis-1/2 mt-10 sm:mt-0"
         >
           { showModal && <Modal show={true}>
             <iframe width="400" height="300" title="formsubmit" name="form-iframe"
