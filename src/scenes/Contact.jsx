@@ -86,7 +86,7 @@ const Contact = () => {
           ref={formAction}
             target="form-iframe"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/f0c74244cecdc916fd8e5f67f4fe2272"
+            action="https://formsubmit.co/kdhillon469@gmail.com"
             method="POST"
           >
             <input type="hidden" name="_captcha" value="false"></input>
