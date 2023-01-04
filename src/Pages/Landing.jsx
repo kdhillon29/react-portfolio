@@ -14,7 +14,7 @@ const Landing = ({ setSelectedPage }) => {
       className="md:flex md:justify-between md:items-center md:gap-12 md:h-full py-10"
     >
       {/* IMAGE SECTION */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-3/5 z-10 mt-10 mt:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:bg-slate-200 before:-top-1 before:-left-1 before:rounded-t-[200px]
@@ -22,20 +22,20 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[600px]"
               src="assets/dev-wave.png"
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="z-10 w-full max-w-[300px] md:max-w-[600px]"
             src="assets/dev-wave.png"
           />
         )}
       </div>
       {/* MAIN TEXT */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32 text-center md:text-start">
+      <div className="z-30 basis-2/5 mt-10 md:mt-32 text-center md:text-start">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -47,7 +47,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-3xl md:text-5xl font-playfair z-10 md:mt-12 ">
+          <p className="text-3xl md:text-5xl font-playfair z-10 mt-6 md:mt-32  ">
             Kanwar {""}
             <span className=" border-collapse xs:relative sm:text-blue">
               {/* //   xs:font-semibold z-20 sm:before:content-brush
