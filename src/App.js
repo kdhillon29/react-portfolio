@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 
 import useMediaQuery from "./hooks/useMediaQuery";
-import DotGroup from "./scenes/DotGroup";
-import Navbar from "./scenes/Navbar";
-import Landing from "./scenes/Landing"
-import Skills from "./scenes/Skills";
+import DotGroup from "./Pages/DotGroup";
+import Navbar from "./Pages/Navbar";
+import Landing from "./Pages/Landing"
+import Skills from "./Pages/Skills";
 import LineGradient from "./components/LineGradient";
 import { motion } from "framer-motion";
-import Projects from "./scenes/Projects";
-import Contact from "./scenes/Contact";
-import Footer from "./scenes/Footer";
+import Projects from "./Pages/Projects";
+import Contact from "./Pages/Contact";
+import Footer from "./Pages/Footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
