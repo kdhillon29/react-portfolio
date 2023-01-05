@@ -5,13 +5,14 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 
 import TextAnimate from "../components/TextAnimate";
 
+
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center md:gap-12 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center md:gap-6 md:h-full  py-10"
     >
       {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-10 mt:mt-32 flex justify-center md:order-2">
@@ -47,7 +48,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-3xl md:text-5xl font-playfair z-10 mt-6 md:mt-32  ">
+          <p className="text-2xl md:text-5xl font-playfair z-10 mt-6 md:mt-32  ">
             Kanwar {""}
             <span className=" border-collapse xs:relative sm:text-blue">
               {/* //   xs:font-semibold z-20 sm:before:content-brush
@@ -56,22 +57,18 @@ const Landing = ({ setSelectedPage }) => {
               Dhillon
             </span>
           </p>
-          <div className="flex justify-center mt-2  md:mt-10">
+          <div className="flex justify-center mt-2  md:mt-4">
             <TextAnimate />
           </div>
-          <p className="mt-5 mb-7 mx-auto prose text-sm font-semibold  text-justify">
-            Hardworking, adaptable person who enjoys coding,taking challenges
-            and learning new skills.Strong skills in problem solving analytical and attention to detail.
-            <br/>
-            My technical skills includes ES6,ReactJS,Angular,Tailwind,CSS,
-            HTML,Figma,SQL,Github,Bash etc.
-            I'm currently looking for a role where I can apply all my
-            transferable skills to build greater user experience.
+          <p className="my-2 mx-auto px-6 prose prose-sm md:prose-base prose-slate font-playfair font-semibold text-justify">
+            Hardworking, adaptable person who enjoys coding, taking challenges
+            and learning new skills.Strong skills in problem solving, analytical and attention to detail.<br/>
+            I'm currently looking for a role where I can apply all my transferable skills to build greater user experience.
             </p>
         </motion.div>
         {/* CALL TO ACTIONS */}
         <motion.div
-          className="flex mt-10 p-2 justify-center md:justify-start"
+          className="flex my-2 p-2 justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -101,7 +98,7 @@ const Landing = ({ setSelectedPage }) => {
         </motion.div>
 
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex my-2 md:mb-32  justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -114,6 +111,7 @@ const Landing = ({ setSelectedPage }) => {
           <SocialMediaIcons />
         </motion.div>
       </div>
+    
     </section>
   );
 };
