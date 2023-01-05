@@ -60,15 +60,14 @@ const Landing = ({ setSelectedPage }) => {
             <TextAnimate />
           </div>
           <p className="mt-5 mb-7 mx-auto prose text-sm font-semibold  text-justify">
-            Hardworking, adaptable person who enjoys coding, taking challenges
-            and learning new skills.I have good technical skills in ES6,react,
-            angular,Tailwind,CSS,HTML,SQL,Github etc.
-             <br/>
+            Hardworking, adaptable person who enjoys coding,taking challenges
+            and learning new skills.Strong skills in problem solving analytical and attention to detail.
+            <br/>
+            My technical skills includes ES6,ReactJS,Angular,Tailwind,CSS,
+            HTML,Figma,SQL,Github,Bash etc.
             I'm currently looking for a role where I can apply all my
-            transferable skills to build greater user experience.I believe that
-            my previous support experience and sound analytical, problem solving
-            and teamwork skills is fully transferable to my new role .
-          </p>
+            transferable skills to build greater user experience.
+            </p>
         </motion.div>
         {/* CALL TO ACTIONS */}
         <motion.div
