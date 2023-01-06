@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Skills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pt-10">
+    <section id="skills" className="pt-10 my-8">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-10">
         <motion.div
@@ -23,9 +23,9 @@ const Skills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
+          <p className="my-8">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           
           </p>
         </motion.div>
 
