@@ -5,7 +5,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 
 import TextAnimate from "../components/TextAnimate";
 
-
+  //landing page
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
