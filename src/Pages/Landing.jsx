@@ -60,9 +60,9 @@ const Landing = ({ setSelectedPage }) => {
           <div className="flex justify-center mt-2  md:mt-4">
             <TextAnimate />
           </div>
-          <p className="my-2 mx-auto px-6 prose prose-sm md:prose-base prose-slate font-playfair font-semibold text-justify">
+          <p className="my-2 mx-auto prose px-2 md:prose-lg prose-slate  font-semibold text-justify">
             Hardworking, adaptable person who enjoys coding, taking challenges
-            and learning new skills.Strong skills in problem solving, analytical and attention to detail.<br/>
+            and learning new skills.<br/>
             I'm currently looking for a role where I can apply all my transferable skills to build greater user experience.
             </p>
         </motion.div>
