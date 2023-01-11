@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Modal from "../components/Modal"
 import { useRef, useState } from "react";
 
+
+//contact comments
 const Contact = () => {
     const formAction =useRef(null)
     const [showModal, setshowModal] = useState(false)
