@@ -3,29 +3,34 @@ import { SkillBars } from 'react-skills';
 const skillsData= [
   {
     name: 'Java Script',
-    level: 80,
+    level: 60,
     color: 'Maroon',
   },
   {
     name: 'HTML5/CSS3',
-    level: 70,
+    level: 50,
     color: 'Salmon',
   },
   {
     name: 'ReactJS',
-    level: 70,
+    level: 60,
     color: 'blue',
   },
  
   {
     name: 'Redux',
-    level: 60,
+    level: 50,
     color: 'Green',
   },
   {
     name: 'Angular',
-    level: 60,
+    level:40,
     color: 'Silver',
+  },
+  {
+    name: 'C#,.Net Web Api',
+    level:40,
+    color: 'Salmon',
   },
   {
     name: 'UX/UI/Figma',
@@ -34,21 +39,17 @@ const skillsData= [
   },
   {
     name: 'Tailwind/Material-Ui',
-    level: 60,
+    level: 50,
     color: 'Magenta',
   },
-  {
-    name: 'UX/UI Design',
-    level: 60,
-    color: 'Purple',
-  },
+  
   {
     name: 'Nodejs/ExpressjS',
-    level: 50,
+    level: 40,
     color: 'Brown',
   },
   {
-    name: 'Firebase/.Net6',
+    name: 'SQL,PostgreSQl',
     level: 40,
     color: 'Green',
   }
