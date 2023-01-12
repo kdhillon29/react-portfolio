@@ -6,7 +6,7 @@ import Bars from "../components/Bars";
 const Skills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pt-10 mt-6">
+    <section id="skills" className="pt-10 my-6">
       {/* HEADER AND IMAGE SECTION */}
           <p className="font-playfair font-semibold text-4xl mb-4">
             MY <span className="text-red">SKILLS</span>
