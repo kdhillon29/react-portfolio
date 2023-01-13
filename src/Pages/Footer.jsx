@@ -1,5 +1,6 @@
 import SocialMediaIcons from "../components/SocialMediaIcons";
 
+//footer comments added
 const Footer = () => {
   return (
     <footer className="mt-2 mb-0  bg-red pt-2">
