@@ -1,7 +1,7 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+// import SocialMediaIcons from "../components/SocialMediaIcons";
 
 import TextAnimate from "../components/TextAnimate";
 
@@ -108,7 +108,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <SocialMediaIcons />
+          {/* <SocialMediaIcons /> */}
         </motion.div>
       </div>
     
