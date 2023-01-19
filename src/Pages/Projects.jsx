@@ -1,6 +1,6 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-
+import { ProjectList } from "../data/Projects";
 //conteiner comment added
 const container = {
   hidden: {},
@@ -16,29 +16,41 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title,imgType='jpeg' }) => {
+const Project = ({ title,desc,imgUrl,stack,demo,github,imgType='jpeg' }) => {
   // const imgType='jpeg' || 'png';
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
+  // const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Aspernatur optio asperiores quas cumque fugit laudantium esse natus cupiditate doloribus quisquam?
+        <p className="text-xl bg-green-300 p-2 font-playfair">{title}</p>
+        <p className="mt-2 text-center text-gray-800 font-semibold">
+         {desc}
         </p>
+        <strong className="bg-slate-300 p-2 mb-2">{stack}</strong>
+        <button className="bg-green hover:bg-gray-100 text-gray-800 font-semibold mb-2 py-2 px-4 border border-gray-400 rounded shadow">
+        
+        <a  href={demo} target="_blank" rel="noopener noreferrer">Live Demo</a>
+         </button>
+         <button className="bg-blue hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+        
+        <a  href={github} target="_blank" rel="noopener noreferrer">Github Repo</a>
+         </button>
+
       </div>
-      <img src={`/assets/${projectTitle}.${imgType}`} alt={projectTitle} />
+      <div className="bg-indigo-300   " >
+           <img src={`/assets/${imgUrl}`} alt={title} className="w-96 h-96  " />
+      </div>
+      {/* <img src={`/assets/${imgUrl}`} alt={title} width="200" height="500" /> */}
     </motion.div>
   );
 };
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-20 pb-24 ">
+    <section id="projects" className="py-20  ">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"
@@ -52,24 +64,23 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
+          {/* <p className="font-playfair font-semibold text-3xl">
             <span className="text-red">PRO</span>JECTS
-          </p>
-          <div className="flex justify-center mt-5">
-            <LineGradient width="w-1/3" />
+          </p> */}
+          <p className="mt-4 mb-6 text-4xl text-center font-bold text-fuchsia-400">
+          Project Portfolio 
+          <LineGradient width="" className="" /> 
+        </p>
+          <div className="flex justify-center ">
           </div>
         </div>
-        <p className="mt-4 mb-6">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Deleniti maiores cumque alias accusamus itaque suscipit soluta reiciendis dicta aspernatur,
-          voluptatem nam! Libero asperiores reprehenderit, cum ipsam quidem aliquam aperiam minus.
-        </p>
+       
       </motion.div>
 
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="sm:grid sm:grid-cols-3 gap-1"
           variants={container}
           initial="hidden"
           whileInView="visible"
@@ -82,17 +93,12 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project-trvl" imgType={'png'} />
-          <Project title="Project 2" />
-
-          {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          {/* <Project title="Project 5" /> */}
-
-          {/* ROW 3 */}
-          {/* <Project title="Project 6" /> */}
-          {/* <Project title="Project 7" /> */}
+          {ProjectList.map(project=>{
+            const {title,desc,imgUrl,stack,demo,github} =project
+            console.log(title)
+            return   <Project {...{title,desc,imgUrl,stack,demo,github}}  />
+            })}
+         
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
